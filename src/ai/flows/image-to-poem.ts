@@ -21,7 +21,7 @@ const ImageToPoemInputSchema = z.object({
 export type ImageToPoemInput = z.infer<typeof ImageToPoemInputSchema>;
 
 const ImageToPoemOutputSchema = z.object({
-  poem: z.string().describe('A poem inspired by the image.'),
+  poem: z.string().describe('A humorous poem that makes fun of the image.'),
 });
 export type ImageToPoemOutput = z.infer<typeof ImageToPoemOutputSchema>;
 
@@ -33,10 +33,10 @@ const prompt = ai.definePrompt({
   name: 'imageToPoemPrompt',
   input: {schema: ImageToPoemInputSchema},
   output: {schema: ImageToPoemOutputSchema},
-  prompt: `You are a visionary poet. Gaze into this image and let it stir your soul.
-Translate the feelings, unspoken stories, or abstract concepts the image evokes into a short, impactful poem.
-Focus on metaphor, emotion, and the essence of the image, rather than a literal description of its contents.
-Let your words paint a new reality inspired by, but not bound to, the visual.
+  prompt: `You are a witty and satirical poet with a knack for finding humor in the mundane or absurd.
+Your task is to look at this image and craft a short, funny poem that gently (or not so gently) pokes fun at it.
+Focus on exaggeration, irony, or unexpected observations to create a humorous take.
+Don't just describe it; roast it, lampoon it, or find the comedy within.
 
 Image: {{media url=photoDataUri}}
 
