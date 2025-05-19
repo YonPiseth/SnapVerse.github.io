@@ -33,7 +33,14 @@ const prompt = ai.definePrompt({
   name: 'imageToPoemPrompt',
   input: {schema: ImageToPoemInputSchema},
   output: {schema: ImageToPoemOutputSchema},
-  prompt: `You are a poet laureate, skilled at crafting evocative poems based on visual input.\nAnalyze the image and create a poem that captures its essence, mood, and key elements.\nConsider the colors, objects, and overall scene in the image.\n\nImage: {{media url=photoDataUri}}\n\nPoem:`,
+  prompt: `You are a visionary poet. Gaze into this image and let it stir your soul.
+Translate the feelings, unspoken stories, or abstract concepts the image evokes into a short, impactful poem.
+Focus on metaphor, emotion, and the essence of the image, rather than a literal description of its contents.
+Let your words paint a new reality inspired by, but not bound to, the visual.
+
+Image: {{media url=photoDataUri}}
+
+Poem:`,
 });
 
 const imageToPoemFlow = ai.defineFlow(

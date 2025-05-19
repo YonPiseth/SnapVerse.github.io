@@ -84,7 +84,7 @@ export default function HomePage() {
         </div>
       </main>
       <footer className="py-6 text-center text-sm text-muted-foreground border-t border-border mt-auto">
-        © {new Date().getFullYear()} SnapVerse. Create with AI.
+        © {new Date().getFullYear()} SnapVerse. Create By Seth.
       </footer>
     </div>
   );
