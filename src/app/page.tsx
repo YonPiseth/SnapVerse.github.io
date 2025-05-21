@@ -45,7 +45,7 @@ export default function HomePage() {
               SnapVerse
             </h1>
             <p className="mt-3 text-lg text-muted-foreground max-w-xl mx-auto">
-              Transform your photos into beautiful, AI-generated poetry. Upload an image and let creativity flow!
+              Transform your photos into Funny Poem, AI-generated poetry. Upload an image and let creativity flow!
             </p>
           </div>
 
