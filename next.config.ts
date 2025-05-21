@@ -18,6 +18,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  basePath: '/SnapVerse.github.io', // Add this line
 };
 
 export default nextConfig;
