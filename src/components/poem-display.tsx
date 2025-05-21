@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Copy, Download, Image as ImageIcon } from 'lucide-react';
+import { Copy, Download } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import React from 'react';
 
@@ -65,7 +65,7 @@ export function PoemDisplay({ imageUrl, poem }: PoemDisplayProps) {
         </div>
         <div className="space-y-4">
           <h3 className="text-lg font-medium text-primary-foreground/90">Generated Poem:</h3>
-          <div ref={poemRef} className="p-4 bg-primary/20 rounded-md min-h-[200px] whitespace-pre-wrap text-foreground leading-relaxed font-mono text-sm shadow-inner">
+<div ref={poemRef} className="p-4 bg-primary/20 rounded-md min-h-[200px] whitespace-pre-wrap text-foreground leading-relaxed font-mono text-sm shadow-inner">
             {poem}
           </div>
           <div className="flex flex-col sm:flex-row gap-2 pt-2">
